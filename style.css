@@ -1,0 +1,97 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+    
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.buttons {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align buttons in the middle horizontally */
+    justify-content: center; /* Align buttons in the middle vertically */
+}
+button {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    width: 150px; 
+}
+
+.grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(10, 60px);
+    grid-template-rows: repeat(10, 60px);
+}
+
+.block {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: white;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.block.start {
+    background-color: green;
+}
+
+.block.end {
+    background-color: red;
+}
+
+.block.start_final {
+    background-color: green;
+    transform: scale(1.1);
+}
+
+.block.end_final {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+.block.wall {
+    background-color: black;
+}
+
+.block.visited {
+    background-color: blue;
+}
+
+
+.block.path {
+    background-color: yellow;
+    transform: scale(1.1); 
+}
+
+.instructions {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.instructions p {
+    margin-bottom: 10px;
+}
+
+    
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .buttons {
+        flex-direction: row;
+    
+    }
+    
+    button {
+        width: 100px;
+    }
+    
+}

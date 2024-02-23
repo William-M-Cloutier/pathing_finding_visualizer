@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="selectStartPosition()">Select Start Position</button>
+            <button onclick="selectEndPosition()">Select End Position</button>
+            <button onclick="startDFS()">Start DFS</button>
+            <button onclick="startBFS()">Start BFS</button>
+            <button onclick="startAStar()">Start A*</button>
+            <button onclick="clearMaze()">Clear Maze</button>
+        </div>
+        <div class="grid" id="maze"></div>
+            <div class="instructions">
+                <p>Click on a square to add a wall.</p>
+                <p>Click on the "Select Start Position" <br>and then click on a square to add a starting position </p>
+                <p>Click on the "Select End Position" <br>and then click on a square to add an ending position </p>
+                <p>Click on the DFS, BFS, or A* button to run the algorithm.</p>
+                <p>Click on Clear Maze to empty all squares.</p>
+            </div>
+    </div>
+    <script src="maze.js"></script>
+    <script src="dfs.js"></script>
+    <script src="bfs.js"></script>
+    <script src="astar.js"></script>
+</body>
+</html>
