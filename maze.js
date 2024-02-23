@@ -142,20 +142,3 @@ function visualizeVisited(visited) {
     });
 }
 
-//function visualizeVisited(visited) {
-//    index = 0;
-//    for (let i = 0; i < visited.length; i++){
-//        for(let j = 0; j < visited[i].length; j++){
-//            index += 1;
-//            if (visited[i][j]) {
-//                setTimeout(() => {
-//                const block = document.getElementById(`block-${i}-${j}`);
-//                if (!block.classList.contains('start') && !block.classList.contains('end')) {
-//                    block.classList.add('visited');
-//                }
-//
-//                }, 100);
-//            }
-//        }
-//    }
-//}
